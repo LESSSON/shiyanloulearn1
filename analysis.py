@@ -8,12 +8,11 @@ def analysis(filename, user_id):
     minutes = 0
 
     try:
-        with open(filename, 'r') as file:
-            data = json.loads(file.read())
+        data = json.load(open(filename))
     except:
         return times, minutes
 
-        if !t.get(user_id, 0):
+        if t['user_id'] = user_id:
             times = times + 1
             minutes = minutes + t[user_id]
 
